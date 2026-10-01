@@ -388,6 +388,20 @@ footer {
 .link-detail {font-size:13px;line-height:1.6;color:var(--grey);}
 @media(max-width:800px){.links-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:520px){.links-grid{grid-template-columns:1fr;}.link-card{min-height:150px;}}
+
+/* ---------- real encounters ---------- */
+.encounters {padding:8vw 5vw;border-bottom:1px solid var(--hairline);scroll-margin-top:60px;}
+.encounters h2 {font-family:'Anton',sans-serif;text-transform:uppercase;font-size:clamp(46px,6vw,88px);line-height:1;margin-bottom:24px;}
+.encounter-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:42px 32px;margin-top:40px;}
+.encounter-photo {margin:0;}
+.encounter-photo img {width:100%;height:340px;object-fit:contain;background:#f4f4f2;border:1px solid var(--hairline);}
+.encounter-photo h3 {font-family:'Oswald',sans-serif;font-size:24px;font-weight:500;line-height:1.3;margin:20px 0 8px;}
+.encounter-meta {font-size:14px;color:var(--grey);line-height:1.6;}
+.encounter-credit {font-size:12px;line-height:1.7;color:var(--grey);margin-top:10px;}
+.encounter-credit a {color:inherit;text-underline-offset:3px;}
+.encounters h3.archive-title {font-family:'Oswald',sans-serif;font-size:28px;font-weight:500;margin:56px 0 12px;}
+.encounters .links-grid {margin-top:24px;}
+@media(max-width:700px){.encounter-grid{grid-template-columns:1fr;gap:34px;}.encounter-photo img{height:auto;}.encounters .links-grid{grid-template-columns:1fr;}.encounters .link-card{min-height:145px;padding:24px;}}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -531,6 +545,40 @@ footer {
   <h2 class="reveal">The brand</h2>
   <div class="brand-imgs">
     <figure class="reveal"><img src="images/10-project-9.jpg" alt="The One God Project t-shirt"></figure>
+  </div>
+</section>
+
+<section class="encounters" id="encounters" aria-labelledby="encounters-title">
+  <p class="eyebrow">Across traditions</p>
+  <h2 id="encounters-title">Real encounters</h2>
+  <p class="same-note">Different traditions. A shared table, a conversation, a moment of friendship. These photographs document real meetings, not agreement on every belief or endorsement of this project.</p>
+  <div class="encounter-grid">
+    <figure class="encounter-photo">
+      <img src="images/1-assisi.jpg" alt="Religious representatives gathered in Assisi for the World Day of Prayer for Peace in 2011" loading="lazy">
+      <figcaption><h3>World Day of Prayer for Peace</h3><p class="encounter-meta">Assisi, Italy · 27 October 2011</p><p class="encounter-credit">Photo: Stephan Kölliker · <a href="https://commons.wikimedia.org/wiki/File:World-Day-of-Prayer-for-Peace_Assisi_2011.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>Resized; displayed uncropped.</p></figcaption>
+    </figure>
+    <figure class="encounter-photo">
+      <img src="images/2-four.jpg" alt="Participants in conversation at a Zawiyah Foundation interfaith event in 2007" loading="lazy">
+      <figcaption><h3>Four Faiths</h3><p class="encounter-meta">Zawiyah Foundation interfaith event · 26 May 2007</p><p class="encounter-credit">Photo: Shazron · <a href="https://commons.wikimedia.org/wiki/File:Four_Faiths.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a><br>Resized; displayed uncropped.</p></figcaption>
+    </figure>
+    <figure class="encounter-photo">
+      <img src="images/3-zalman.jpg" alt="The Dalai Lama with Rabbi Zalman Schachter-Shalomi in Dharamsala in 1990" loading="lazy">
+      <figcaption><h3>The Dalai Lama &amp; Rabbi Zalman</h3><p class="encounter-meta">Dharamsala, India · 25 October 1990</p><p class="encounter-credit">Photo: Rodger Kamenetz · <a href="https://commons.wikimedia.org/wiki/File:Dalai_Lama_Zalmancolor300dpi.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><br>Resized; displayed uncropped.</p></figcaption>
+    </figure>
+    <figure class="encounter-photo">
+      <img src="images/4-asia.jpg" alt="Group photograph at the Asia Interfaith Forum in Bogor in 2018" loading="lazy">
+      <figcaption><h3>Asia Interfaith Forum</h3><p class="encounter-meta">Bogor, Indonesia · 25 July 2018</p><p class="encounter-credit">Photo: Akhlispurnomo · <a href="https://commons.wikimedia.org/wiki/File:Asia_Interfaith_Forum_2018.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>Resized; displayed uncropped.</p></figcaption>
+    </figure>
+  </div>
+  <h3 class="archive-title">More moments, in their own archives</h3>
+  <p class="same-note">See the photographs and their stories at the original sources.</p>
+  <div class="links-grid">
+    <a class="link-card" href="https://www.vaticannews.va/en/world/news/2023-06/un-human-fraternity-can-build-better-world.html" target="_blank" rel="noopener noreferrer"><span class="link-title">Pope Francis &amp; Ahmed el-Tayeb</span><span class="link-detail">Abu Dhabi · 2019<br>Vatican News &#8599;</span></a>
+    <a class="link-card" href="https://www.dalailama.com/pictures/desmond-tutu-visits-dharamsala-hp-india" target="_blank" rel="noopener noreferrer"><span class="link-title">The Dalai Lama &amp; Desmond Tutu</span><span class="link-detail">Dharamsala · April 2015<br>The Dalai Lama’s official photo archive &#8599;</span></a>
+    <a class="link-card" href="https://tibet.net/global-inter-faith-symposium-with-his-holiness-the-dalai-lama/" target="_blank" rel="noopener noreferrer"><span class="link-title">Lighting a lamp together</span><span class="link-detail">Delhi · September 2019<br>Central Tibetan Administration &#8599;</span></a>
+    <a class="link-card" href="https://www.theguardian.com/world/article/2024/sep/05/pope-francis-indonesia-visit-jakarta-istiqlal-nasaruddin-umar" target="_blank" rel="noopener noreferrer"><span class="link-title">Pope Francis &amp; Nasaruddin Umar</span><span class="link-detail">Jakarta · September 2024<br>The Guardian &#8599;</span></a>
+    <a class="link-card" href="https://mospat.ru/en/news/49073/" target="_blank" rel="noopener noreferrer"><span class="link-title">Patriarch Kirill &amp; Rabbi Berel Lazar</span><span class="link-detail">October 2016<br>Moscow Patriarchate archive &#8599;</span></a>
+    <a class="link-card" href="https://www.ncronline.org/news/world/pope-francis-leaves-holy-land-hope-peace-prayer" target="_blank" rel="noopener noreferrer"><span class="link-title">An embrace at the Western Wall</span><span class="link-detail">Francis, Abraham Skorka &amp; Omar Abboud · May 2014<br>National Catholic Reporter &#8599;</span></a>
   </div>
 </section>
 
